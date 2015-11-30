@@ -12,6 +12,7 @@
 		E5C422F41C06323900EA0DE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C422F31C06323900EA0DE4 /* ViewController.m */; };
 		E5C422F61C06323900EA0DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C422F51C06323900EA0DE4 /* Assets.xcassets */; };
 		E5C422F91C06323900EA0DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C422F71C06323900EA0DE4 /* Main.storyboard */; };
+		E5C423011C0632ED00EA0DE4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C423001C0632ED00EA0DE4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E5C422F51C06323900EA0DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C422F81C06323900EA0DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5C422FA1C06323900EA0DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C423001C0632ED00EA0DE4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C423011C0632ED00EA0DE4 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		E5C422E01C06323900EA0DE4 = {
 			isa = PBXGroup;
 			children = (
+				E5C423001C0632ED00EA0DE4 /* WebKit.framework */,
 				E5C422EB1C06323900EA0DE4 /* GrooveX */,
 				E5C422EA1C06323900EA0DE4 /* Products */,
 			);

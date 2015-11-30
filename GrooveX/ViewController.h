@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet WebView *webView;
 
 @end
 
