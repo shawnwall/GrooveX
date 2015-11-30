@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "MediaKeyApplication.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nextTrack:) name:MediaKeyNextNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(previousTrack:) name:MediaKeyPreviousNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(togglePlayPause:) name:MediaKeyPlayPauseNotification object:nil];
+    
     // Do any additional setup after loading the view.
     NSURL *url = [NSURL URLWithString:@"https://music.microsoft.com"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
@@ -26,6 +31,18 @@
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+- (void)nextTrack:(id)sender {
+    [self.webView stringByEvaluatingJavaScriptFromString:@"javascript:document.querySelectorAll(\".iconPlayerNext\")[0].click();"];
+}
+
+- (void)previousTrack:(id)sender {
+    [self.webView stringByEvaluatingJavaScriptFromString:@"javascript:document.querySelectorAll(\".iconPlayerPrevious\")[0].click();"];
+}
+
+- (void)togglePlayPause:(id)sender {
+    [self.webView stringByEvaluatingJavaScriptFromString:@"javascript:pause = document.querySelectorAll(\".iconPlayerPause\")[0]; play = document.querySelectorAll(\".iconPlayerPlay\")[0]; if (pause) { pause.click(); } else { play.click();}"];
 }
 
 @end

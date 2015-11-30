@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E505FE381C0CB2E100BF2823 /* MediaKeyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E505FE371C0CB2E100BF2823 /* MediaKeyApplication.m */; };
 		E5C422EE1C06323900EA0DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C422ED1C06323900EA0DE4 /* AppDelegate.m */; };
 		E5C422F11C06323900EA0DE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C422F01C06323900EA0DE4 /* main.m */; };
 		E5C422F41C06323900EA0DE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C422F31C06323900EA0DE4 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E505FE361C0CB2E100BF2823 /* MediaKeyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaKeyApplication.h; sourceTree = "<group>"; };
+		E505FE371C0CB2E100BF2823 /* MediaKeyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaKeyApplication.m; sourceTree = "<group>"; };
 		E5C422E91C06323900EA0DE4 /* GrooveX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrooveX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C422EC1C06323900EA0DE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5C422ED1C06323900EA0DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				E5C422F71C06323900EA0DE4 /* Main.storyboard */,
 				E5C422FA1C06323900EA0DE4 /* Info.plist */,
 				E5C422EF1C06323900EA0DE4 /* Supporting Files */,
+				E505FE361C0CB2E100BF2823 /* MediaKeyApplication.h */,
+				E505FE371C0CB2E100BF2823 /* MediaKeyApplication.m */,
 			);
 			path = GrooveX;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C422F41C06323900EA0DE4 /* ViewController.m in Sources */,
+				E505FE381C0CB2E100BF2823 /* MediaKeyApplication.m in Sources */,
 				E5C422F11C06323900EA0DE4 /* main.m in Sources */,
 				E5C422EE1C06323900EA0DE4 /* AppDelegate.m in Sources */,
 			);
@@ -291,6 +297,7 @@
 				E5C422FF1C06323900EA0DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
