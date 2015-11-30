@@ -4,4 +4,4 @@ This isn't special or complicated. It's a WebView that loads up Groove so you ca
 
 *Note you need to have Flash installed.*
 
-[Download](https://goo.gl/UpI6gz)
+[Download](https://goo.gl/1j0riX)
